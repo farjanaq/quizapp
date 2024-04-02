@@ -11,7 +11,7 @@ function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [optionChosen, setOptionChosen] = useState("");
 
-  const { score, setScore, gameState, setGameState , setTotalscore, setRegames, regames, totalscore } = useContext(
+  const { score, setScore, setGameState , setTotalscore, setRegames, regames, totalscore } = useContext(
     GameStateContext
   );
 
