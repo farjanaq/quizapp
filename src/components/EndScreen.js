@@ -28,11 +28,11 @@ const EndScreen = () => {
       <h1>Quiz Finished</h1>
       <h3>{userName}</h3>
       <h1>
-        {score} / {Questions.length}
+        {(score *100 )/Questions.length} 
       </h1>
-      <h1> total score : {totalscore ==0 ? score :totalscore + score}</h1>
+      {/*<h1> total score : {totalscore ==0 ? score :totalscore + score}</h1> */}
 
-      <h1> total score avarage : {regames==0? score: (totalscore + score)/ (regames+1)}</h1>
+      <h1> total score avarage : {regames==0?  (score *100) /Questions.length  : ((totalscore + score)*100)/ ((regames+1)*Questions.length) }</h1>
       <button onClick={restartQuiz}>Restart Quiz</button>
     </div>
   );
